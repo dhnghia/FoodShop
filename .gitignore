@@ -1,0 +1,9 @@
+client-app/.next/
+client-app/node_modules/
+client-app/next-env.d.ts
+client-app/out/
+client-app/.env.local
+server-app/.vscode/
+server-app/bin/
+server-app/obj/
+server-app/publish/
