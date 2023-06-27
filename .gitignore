@@ -7,3 +7,4 @@ server-app/.vscode/
 server-app/bin/
 server-app/obj/
 server-app/publish/
+server-app/wwwroot/
