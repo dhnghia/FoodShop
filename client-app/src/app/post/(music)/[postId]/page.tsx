@@ -1,3 +1,11 @@
+export async function generateStaticParams() {
+    const postIds = ['1','2','3'];
+   
+    return postIds.map((postId) => {
+        return {
+            postId,
+        }})
+  }
 
 function Page() {  
     return <h1>Details about product</h1>
