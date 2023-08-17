@@ -1,4 +1,7 @@
+using Application;
+using Infrastructure;
 using NextjsStaticHosting.AspNetCore;
+using Presentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +13,18 @@ builder.Services.AddControllers();
 builder.Services.Configure<NextjsStaticHostingOptions>(builder.Configuration.GetSection("NextjsStaticHosting"));
 builder.Services.AddNextjsStaticHosting();
 
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services
+    .AddApplication()
+    .AddInfrastructure()
+    .AddPresentation();
+
+// builder.Host.UseSerilog((context, configuration) => 
+//     configuration.ReadFrom.Configuration(context.Configuration));
 
 var app = builder.Build();
 

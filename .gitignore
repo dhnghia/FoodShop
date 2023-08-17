@@ -8,3 +8,15 @@ server-app/bin/
 server-app/obj/
 server-app/publish/
 server-app/wwwroot/
+client-app/.idea/
+server-app/.idea/
+server-app/Application/bin/
+server-app/Application/obj/
+server-app/Domain/bin/
+server-app/Domain/obj/
+server-app/Infrastructure/bin/
+server-app/Infrastructure/obj/
+server-app/Presentation/bin/
+server-app/Presentation/obj/
+server-app/WebApi/bin/
+server-app/WebApi/obj/

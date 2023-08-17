@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace server_app.Controllers;
+namespace WebApi.Controllers;
+
 [ApiController]
 [Route("api/[controller]")]
 public class EchoController : Controller
 {
-    [Route("GetEcho")]
+    [HttpGet(Name = "GetEcho")]
     public string GetEcho()
     {
         return "Hello world";
     }
 }
-
