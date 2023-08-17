@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "npx copyfiles -u 1 \"out/**/*\" ../server-app/wwwroot",
-    "build-export": "next build && npm run export",
+    "clean-out-folder": "rimraf out",
+    "build-export": "next build && npm run export && npm run clean-out-folder",
     "start": "next start",
     "lint": "next lint"
   },
